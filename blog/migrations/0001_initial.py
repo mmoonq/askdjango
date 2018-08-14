@@ -11,9 +11,9 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='Post',
-            fields=[
+        migrations.CreateModel(     # CreateModel : 새로운 데이타베이스 테이블을 만들겠다.! 는 것!
+            name='Post', # 이름은 'Post'인데 실제 테이블 명은 '앱이름_post'이니 'blog_post'이다.
+            fields=[    # 각각의 필드는 밑에 처럼 설정하겠다. 는 뜻
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('content', models.TextField()),
